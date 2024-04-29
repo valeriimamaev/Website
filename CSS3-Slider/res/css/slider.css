@@ -36,7 +36,7 @@
 #slider {
 	background:#000;
 	box-shadow:1px 1px 5px rgba(0,0,0,0.7);
-	height:320px;
+	height: calc(100vh - 188px);
 	width:100%;
 	/* margin:40px auto 0; */
 	overflow:visible;
@@ -44,7 +44,7 @@
 }
 #mask {
 	overflow:hidden;
-	height:320px;
+	height: calc(100vh - 188px);
 }
 #slider ul {
 	margin:0;
@@ -53,29 +53,34 @@
 }
 #slider li {
 	width:100%;
-	height:320px;
+	height: calc(100vh - 188px);
 	position:absolute;
 	top:-325px;
 	list-style:none;
 }
 
 #slider li.firstanimation {
+	background: url("../../images/img_1.jpg") center/cover no-repeat;
 	-moz-animation:cycle 25s linear infinite;	
 	-webkit-animation:cycle 25s linear infinite;		
 }
 #slider li.secondanimation {
+	background: url("../../images/img_2.jpg") center/cover no-repeat;
 	-moz-animation:cycletwo 25s linear infinite;
 	-webkit-animation:cycletwo 25s linear infinite;		
 }
 #slider li.thirdanimation {
+	background: url("../../images/img_3.jpg") center/cover no-repeat;
 	-moz-animation:cyclethree 25s linear infinite;
 	-webkit-animation:cyclethree 25s linear infinite;		
 }
 #slider li.fourthanimation {
+	background: url("../../images/img_4.jpg") center/cover no-repeat;
 	-moz-animation:cyclefour 25s linear infinite;
 	-webkit-animation:cyclefour 25s linear infinite;		
 }
 #slider li.fifthanimation {
+	background: url("../../images/img_5.jpg") center/cover no-repeat;
 	-moz-animation:cyclefive 25s linear infinite;
 	-webkit-animation:cyclefive 25s linear infinite;		
 }
@@ -86,9 +91,9 @@
 	height:60px;
 	position:relative;
 	bottom:75px;
-	left:-320px;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;  
+	left: 0;
+	/* -moz-transition:all 0.3s ease-in-out; */
+	/* -webkit-transition:all 0.3s ease-in-out;   */
 }
 #slider .tooltip h1 {
 	color:#fff;
@@ -97,18 +102,18 @@
 	line-height:60px;
 	padding:0 0 0 20px;
 }
-#slider li#first:hover .tooltip, 
+/* #slider li#first:hover .tooltip, 
 #slider li#second:hover .tooltip, 
 #slider li#third:hover .tooltip, 
 #slider li#fourth:hover .tooltip, 
 #slider li#fifth:hover .tooltip {
 	left:0px;
-}
-#slider:hover li, 
+} */
+/* #slider:hover li, 
 #slider:hover .progress-bar {
 	-moz-animation-play-state:paused;
 	-webkit-animation-play-state:paused;
-}
+} */
 
 /* PROGRESS BAR */
 .progress-bar { 
