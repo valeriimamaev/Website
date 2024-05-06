@@ -125,7 +125,33 @@ body {
   background-repeat: no-repeat;
   z-index: -2;
 }
-
+.home::after {
+  backdrop-filter: blur(10px);
+}
+.home-content {
+  text-align: center;
+}
+.home-content h1{
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  color: whitesmoke;
+  margin-bottom: 75px;
+}
+.home-content a:hover {
+  transform: scale(1.1);
+  color: rgb(220, 173, 85);
+}
+.home-content a {
+  display: inline-block;
+  color: whitesmoke;
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  border: 2px solid rgba(245, 245, 245, 0.195);
+  border-bottom: 2px solid whitesmoke;
+  padding: 7px;
+}
 .projects::before {
   /* filter: hue-rotate(210deg) blur(3px); */
 }
@@ -280,7 +306,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  /* backdrop-filter: blur(3px); */
+  /* filter: blur(3px); */
   background-color: rgba(235, 196, 6, 0.255);
   z-index: -1;
 }
