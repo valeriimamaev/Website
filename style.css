@@ -277,6 +277,39 @@ body {
 .button-container:hover {
   transform: scale(1.04);
 }
+.about-us-main {
+
+}
+.about-us-container {
+}
+.about-us-container-img {
+  width: 50%;
+  background:url("img/camera.jpg") center/cover no-repeat;
+}
+.about-us-container-text {
+  width: 50%;
+  display: flex;
+  padding: 50px;
+  height: 100%;
+  align-items: center;
+}
+.about-us-container-text h2 {
+  writing-mode: vertical-lr;
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid black;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.about-us-container-text p{
+  padding-right: 50px;
+}
+.about-us-container li {
+  display: flex;
+  height: 400px;
+}
+
 
 .main {
   width: 100%;
