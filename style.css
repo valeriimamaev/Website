@@ -301,8 +301,8 @@ body {
 }
 .about-us-container-text {
   width: 50%;
-  display: flex;
   display: -webkit-flex;
+  display: flex;
   padding: 50px;
   height: 100%;
   align-items: center;
